@@ -70,11 +70,7 @@ body {
     line-height: 1.4em;
 }
 
-.profile_text h2 span {
-    font-size: 0.8em;
-    font-weight: 300;
-    font-size: 0.7em;
-}
+
 
 .contact_info {
     padding-top: 40px;
@@ -295,153 +291,14 @@ body.dark .about .box .year_company h5 {
 }
 
 
-@media not print {
-
-    @media (max-width: 1080px) {
-        .container {
-            margin: 10px;
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        .interest ul {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    @media (max-width: 600px) {
-        .about .box {
-            flex-direction: column;
-        }
-
-        .about .box .year_company {
-            margin-bottom: 5px;
-        }
-
-        .interest ul {
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        .skills .box {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-
-}
-
-@media print {
-
-    @page {
-        margin: 10px;
-    }
-
-    body {
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
-    }
-
-    .container {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        box-shadow: none;
-        min-height: 100%;
-    }
-
-    .container .left_side {
-        font-size: 14px;
-        padding: 60px 20px 40px 20px;
-    }
-
-    .container .right_side {
-        font-size: 12px;
-    }
-
-    .container~* {
-        display: none;
-    }
-
-    .contact_info {
-        padding-top: 20px;
-    }
-
-    .contact_info ul li .text {
-        font-size: 12px;
-    }
-
-    .contact_info ul li .icon {
-        width: 20px;
-        font-size: 16px;
-    }
-
-    .about {
-        margin-bottom: 20px;
-    }
-
-    .title2 {
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
-
-    .about .box .text h4 {
-        font-size: 14px;
-    }
-
-    .about .box .year_company h5 {
-        font-size: 12px;
-    }
-
-    .about .box .year_company p {
-        font-size: 10px;
-    }
-
-    .about .box {
-        margin: 8px 0;
-    }
-
-    .interest {
-        display: none;
-    }
-
-    .light-dark-mode {
-        display: none;
-    }
-
-    .profile_text .img_bx {
-        width: 140px;
-        height: 140px;
-    }
-
-    .title {
-        font-size: 16px;
-        margin-bottom: 12px;
-    }
-
-    .profile_text h2 {
-        letter-spacing: -1px;
-    }
-
-    /* 
-    body {
-        visibility: hidden;
-    }
-    #section-to-print {
-        visibility: visible;
-        position: absolute;
-        left: 0;
-        top: 0;
-    } */
-}
-
 .footer {
+    background-color: #e2e3e6d7; 
+    color: #000000; 
     text-align: center;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #f8f9fa;
-    /* Cor de fundo opcional */
     padding: 5px 0;
-    /* Espaçamento opcional */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra opcional */
 }
