@@ -99,7 +99,6 @@ body {
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    /* Cor dos icones de contato */
     color: #f73ed2;
 }
 
@@ -115,7 +114,6 @@ body {
 .contact_info.education li {
     margin-bottom: 15px;
 }
-
 
 
 .contact_info.education h4:nth-child(2) {
@@ -139,8 +137,6 @@ body {
 }
 
 
-
-
 .contact_info.language .percent div {
     height: 100%;
     background: #f73ed2;
@@ -159,7 +155,6 @@ body {
 
 .about {
     text-align: justify;
-    /* Ou left, center, right */
 }
 
 .about:last-child {
@@ -167,7 +162,6 @@ body {
 }
 
 .title2 {
-    /* Cor dos títulos */
     color: #a007ff;
     text-transform: uppercase;
     letter-spacing: 1px;
