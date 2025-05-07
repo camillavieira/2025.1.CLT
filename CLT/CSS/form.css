@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #c266db82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: .5s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    padding: 20px;
+}
+
+.container form {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container form h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%; 
+}
+
+.container form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.container form fieldset legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    padding: 0 10px;
+}
+
+.container form label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.container form input[type="text"],
+.container form input[type="email"],
+.container form input[type="tel"],
+.container form input[type="file"],
+.container form input[type="time"],
+.container form input[type="date"],
+.container form select,
+.container form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.container form textarea {
+    resize: vertical;
+}
+
+.container form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.container form button[type="reset"] {
+    background-color: #6c757d;
+}
+
+.container form button:hover {
+    opacity: 0.9;
+}
+
+.container form select[multiple] {
+    height: auto;
+}
+
+.container form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.container form label[for="mysql"],
+.container form label[for="postgresql"],
+.container form label[for="mongodb"] {
+    display: inline-block;
+    margin-right: 15px;
+}
+

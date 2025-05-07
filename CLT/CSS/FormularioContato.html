@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="form.css">
+    <script>
+        function validarFormulario(event) {
+            event.preventDefault();
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const telefone = document.getElementById('telefone').value.trim();
+            const mensagem = document.getElementById('mensagem').value.trim();
+
+            if (!nome || !email || !telefone || !mensagem) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return false;
+            }
+
+            alert('Formulário enviado com sucesso!');
+            document.getElementById('formulario').reset();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulário de Contato</h1>
+        <form id="formulario" onsubmit="validarFormulario(event)">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required><br><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required><br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalhes do Serviço</legend>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+                <label for="lingua">Língua Aplicada:</label>
+                <select id="lingua" name="lingua" required>
+                    <option value="ingles">Inglês</option>
+                    <option value="espanhol">Espanhol</option>
+                    <option value="frances">Francês</option>
+                    <option value="portugues">Português (pt-br)</option>
+                </select><br><br>
+
+                <label for="arquivo">Upload de Protótipo:</label>
+                <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx,.jpeg,.png" required><br><br>
+
+                <label for="linguagens">Linguagens Preferidas:</label><br>
+                <select id="linguagens" name="linguagens[]" multiple required>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="csharp">C#</option>
+                    <option value="php">PHP</option>
+                </select><br><br>
+
+                <label>Banco de Dados Recomendado:</label><br>
+                <input type="radio" id="mysql" name="banco" value="mysql" required>
+                <label for="mysql">MySQL</label><br>
+                <input type="radio" id="postgresql" name="banco" value="postgresql">
+                <label for="postgresql">PostgreSQL</label><br>
+                <input type="radio" id="mongodb" name="banco" value="mongodb">
+                <label for="mongodb">MongoDB</label><br><br>
+
+                <label for="turno">Turno de Reunião:</label>
+                <select id="turno" name="turno" required>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select><br><br>
+
+                <label for="horario">Melhor Horário:</label>
+                <input type="time" id="horario" name="horario" required><br><br>
+
+                <label for="data">Previsão de Entrega:</label>
+                <input type="date" id="data" name="data" required><br><br>
+            </fieldset>
+
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
