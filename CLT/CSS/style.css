@@ -292,13 +292,14 @@ body.dark .about .box .year_company h5 {
 
 
 .footer {
-    background-color: #e2e3e6d7; 
-    color: #000000; 
+    background-color: #e2e3e6d7; /* Cor de fundo neutra */
+    color: #000000; /* Cor do texto */
     text-align: center;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 5px 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: background-color 0.5s, color 0.5s; /* Transição suave */
 }
